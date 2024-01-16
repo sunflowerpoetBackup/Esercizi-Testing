@@ -12,5 +12,10 @@ class MainTest {
         int result = testing.sum(15,25);
         assertEquals(40, result, "Result of 15 + 25 should be 40.");
     }
-
+    @Test
+    public void testSum() {
+        assertEquals(0, Main.sum(0, 0));
+        assertEquals(-10, Main.sum(-5, -5));
+        assertEquals(100, Main.sum(50, 50));
+    }
 }
